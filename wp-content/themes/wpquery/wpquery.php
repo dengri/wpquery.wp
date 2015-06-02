@@ -20,7 +20,7 @@ get_header(); ?>
 
 				//wp_reset_postdata();
 
-				$args = array(	'category_name' => 'music'  );
+				$args = array(	'post_type' => 'project'  );
 
 				$the_query = new WP_Query( $args );
 				
