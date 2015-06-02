@@ -15,23 +15,6 @@ get_header(); ?>
 				<?php comments_template( '', true ); ?>
 			<?php endwhile; // end of the loop. ?>
 
-
-			<?php
-
-				//wp_reset_postdata();
-
-				$args = array(
-								'post_type' = 'post',
-								'posts_per_page' = 1
-				);
-			
-				$the_query = new WP_Query( $args );
-			
-				//wp_reset_postdata();
-
-			?>
-
-
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
